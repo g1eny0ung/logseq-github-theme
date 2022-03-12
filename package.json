@@ -6,13 +6,13 @@
   "logseq": {
     "themes": [
       {
-        "name": "GitHub Light",
+        "name": "GitHub Light Default",
         "url": "./light.css",
         "description": "😻 GitHub Light theme for Logseq.",
         "mode": "light"
       },
       {
-        "name": "GitHub Dark",
+        "name": "GitHub Dark Default",
         "url": "./dark.css",
         "description": "😻 GitHub Dark theme for Logseq.",
         "mode": "dark"
