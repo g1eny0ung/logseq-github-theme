@@ -84,6 +84,17 @@ a.button {
   color: var(--ls-icon-color);
 }
 
+a.tag {
+  padding: 0.1em 0.5em;
+  background-color: var(--accent-fg);
+  color: #fff !important;
+  border-radius: 4px;
+}
+
+a.tag:hover {
+  background-color: var(--accent-emphasis);
+}
+
 /* search */
 .recent-search div[data-tooltipped] .ui__toggle > span[aria-checked="true"] {
   background-color: var(--ls-link-text-color);
