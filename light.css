@@ -137,3 +137,19 @@ table .form-checkbox:checked {
 .block-ref:hover {
   color: var(--neutral-emphasis);
 }
+
+/* code */
+html[data-theme="light"] .CodeMirror {
+  background: var(--neutral-muted);
+}
+
+html[data-theme="light"] .CodeMirror .CodeMirror-gutters {
+  background-color: transparent;
+}
+
+html[data-theme="light"] .extensions__code-lang {
+  top: -0.3em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background: var(--neutral-muted);
+}
