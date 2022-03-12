@@ -4,6 +4,12 @@
 
 😻 GitHub themes for Logseq.
 
+## Screenshots
+
+| Light                                 | Dark                                | Dark Dimmed                                       |
+| ------------------------------------- | ----------------------------------- | ------------------------------------------------- |
+| ![light.png](./screenshots/light.png) | ![dark.png](./screenshots/dark.png) | ![dark-dimmed.png](./screenshots/dark-dimmed.png) |
+
 ## License
 
 MIT @ [g1eny0ung](https://github.com/g1eny0ung)
