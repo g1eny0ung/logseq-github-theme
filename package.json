@@ -1,0 +1,28 @@
+{
+  "name": "logseq-github-theme",
+  "description": "😻 GitHub themes for Logseq.",
+  "author": "Yue Yang <g1enyy0ung@gmail.com>",
+  "repository": "g1eny0ung/logseq-github-theme",
+  "logseq": {
+    "themes": [
+      {
+        "name": "GitHub Light",
+        "url": "./light.css",
+        "description": "😻 GitHub Light theme for Logseq.",
+        "mode": "light"
+      },
+      {
+        "name": "GitHub Dark",
+        "url": "./dark.css",
+        "description": "😻 GitHub Dark theme for Logseq.",
+        "mode": "dark"
+      },
+      {
+        "name": "GitHub Dark Dimmed",
+        "url": "./dark-dimmed.css",
+        "description": "😻 GitHub Dark Dimmed theme for Logseq.",
+        "mode": "dark"
+      }
+    ]
+  }
+}
