@@ -44,7 +44,7 @@ html[data-theme="light"] {
   --ls-menu-hover-color: var(--ls-secondary-background-color);
   --ls-primary-text-color: var(--fg-default);
   --ls-secondary-text-color: var(--fg-muted);
-  --ls-title-text-color: var(--fg-muted);
+  --ls-title-text-color: var(--fg-default);
   --ls-link-text-color: var(--ls-active-primary-color);
   --ls-link-text-hover-color: var(--ls-active-secondary-color);
   --ls-link-ref-text-color: var(--ls-link-text-color);

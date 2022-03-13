@@ -36,19 +36,14 @@ html[data-theme="dark"] {
   --ls-block-properties-background-color: #06323e;
   --ls-page-properties-background-color: #02171d;
   --ls-block-ref-link-text-color: var(--severe-fg);
-  --ls-search-background-color: linear-gradient(
-    to right,
-    #021c23 0,
-    #021b21 200px,
-    #002b36 100%
-  );
+  --ls-search-background-color: var(--ls-primary-background-color);
   --ls-border-color: var(--border-default);
   --ls-secondary-border-color: var(--border-muted);
   --ls-guideline-color: var(--severe-muted);
   --ls-menu-hover-color: var(--ls-secondary-background-color);
   --ls-primary-text-color: var(--fg-default);
   --ls-secondary-text-color: var(--fg-muted);
-  --ls-title-text-color: var(--fg-muted);
+  --ls-title-text-color: var(--fg-default);
   --ls-link-text-color: var(--ls-active-primary-color);
   --ls-link-text-hover-color: var(--ls-active-secondary-color);
   --ls-link-ref-text-color: var(--ls-link-text-color);
