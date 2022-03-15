@@ -133,6 +133,10 @@ span.doing .form-checkbox {
   border-color: var(--open-fg);
 }
 
+span.done div[data-tooltipped] {
+  margin-right: 0.25em;
+}
+
 .form-checkbox:checked {
   background-color: var(--done-emphasis);
   border-color: var(--done-fg);
