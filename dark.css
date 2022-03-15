@@ -17,6 +17,8 @@ html[data-theme="dark"] {
   --neutral-muted: rgba(110, 118, 129, 0.4); /* neutral.muted */
   --accent-fg: #58a6ff; /* accent.fg */
   --accent-emphasis: #1f6feb; /* accent.fg */
+  --attention-fg: #d29922; /* attention.fg */
+  --attention-emphasis: #9e6a03; /* attention.emphasis */
   --severe-fg: #db6d28; /* severe.fg, scale.orange.4 */
   --severe-emphasis: #bd561d; /* severe.emphasis, scale.orange.5 */
   --severe-muted: rgba(219, 109, 40, 0.4); /* severe.muted */
@@ -83,6 +85,7 @@ a.button {
   color: var(--ls-icon-color);
 }
 
+/* tag */
 a.tag {
   padding: 0.1em 0.5em;
   background-color: var(--accent-fg);
@@ -115,9 +118,19 @@ a.menu-link:hover {
 
 /* checkbox */
 .form-checkbox {
+  border-radius: 4px;
+}
+
+span.later .form-checkbox,
+span.todo .form-checkbox {
+  background-color: var(--attention-emphasis);
+  border-color: var(--attention-fg);
+}
+
+span.now .form-checkbox,
+span.doing .form-checkbox {
   background-color: var(--open-emphasis);
   border-color: var(--open-fg);
-  border-radius: 4px;
 }
 
 .form-checkbox:checked {
@@ -134,8 +147,7 @@ table .form-checkbox {
   border: 1px solid var(--ls-border-color) !important;
 }
 
-/* --- */
-
+/* block */
 .block-children-left-border:hover {
   background-color: var(--severe-emphasis);
 }

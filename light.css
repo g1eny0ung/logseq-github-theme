@@ -18,6 +18,8 @@ html[data-theme="light"] {
   --neutral-subtle: rgba(234, 238, 242, 0.5); /* neutral.subtle */
   --accent-fg: #0969da; /* accent.fg */
   --accent-emphasis: #0969da; /* accent.fg */
+  --attention-fg: #9a6700; /* attention.fg */
+  --attention-emphasis: #bf8700; /* attention.emphasis */
   --severe-fg: #bc4c00; /* severe.fg, scale.orange.5 */
   --severe-emphasis: #bc4c00; /* severe.emphasis, scale.orange.5 */
   --severe-muted: rgba(251, 143, 68, 0.4); /* severe.muted */
@@ -84,6 +86,7 @@ a.button {
   color: var(--ls-icon-color);
 }
 
+/* tag */
 a.tag {
   padding: 0.1em 0.5em;
   background-color: var(--accent-fg);
@@ -116,9 +119,19 @@ a.menu-link:hover {
 
 /* checkbox */
 .form-checkbox {
+  border-radius: 4px;
+}
+
+span.later .form-checkbox,
+span.todo .form-checkbox {
+  background-color: var(--attention-emphasis);
+  border-color: var(--attention-fg);
+}
+
+span.now .form-checkbox,
+span.doing .form-checkbox {
   background-color: var(--open-emphasis);
   border-color: var(--open-fg);
-  border-radius: 4px;
 }
 
 .form-checkbox:checked {
@@ -139,14 +152,9 @@ table .form-checkbox:checked {
   background-color: var(--accent-emphasis) !important;
 }
 
-/* --- */
-
+/* block */
 .block-children-left-border:hover {
   background-color: var(--neutral-emphasis);
-}
-
-.block-ref:hover {
-  color: var(--neutral-emphasis);
 }
 
 /* code */
