@@ -85,6 +85,18 @@ a.button {
   color: var(--ls-icon-color);
 }
 
+/* card */
+div[data-refs-self*='"card"'] {
+  margin: 0.5em;
+  background-color: var(--canvas-subtle);
+  border: 1px solid var(--border-default);
+  box-shadow: none;
+}
+
+div[data-refs-self*='"card"'] > div:first-child {
+  margin-left: -0.5em;
+}
+
 /* cloze */
 a.cloze {
   font-weight: lighter;
