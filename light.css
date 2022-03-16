@@ -69,7 +69,7 @@ html[data-theme="light"] {
   --ls-scrollbar-background-color: var(--canvas-overlay);
   --ls-scrollbar-thumb-hover-color: var(--border-default);
   --ls-head-text-color: var(--ls-link-text-color);
-  --ls-cloze-text-color: #0000cd;
+  --ls-cloze-text-color: var(--open-fg);
   --ls-icon-color: var(--fg-default);
   --ls-search-icon-color: var(--ls-link-text-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
@@ -84,6 +84,15 @@ html[data-theme="light"] {
 
 a.button {
   color: var(--ls-icon-color);
+}
+
+/* cloze */
+a.cloze {
+  font-weight: 500;
+}
+
+a.cloze:hover {
+  color: var(--open-emphasis);
 }
 
 /* tag */
