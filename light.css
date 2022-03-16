@@ -166,6 +166,17 @@ table .form-checkbox:checked {
   background-color: var(--accent-emphasis) !important;
 }
 
+/* marker text */
+span.later .block-marker.LATER,
+span.todo .block-marker.TODO {
+  color: var(--attention-emphasis);
+}
+
+span.now .block-marker.NOW,
+span.doing .block-marker.DOING {
+  color: var(--open-emphasis);
+}
+
 /* block */
 .block-children-left-border:hover {
   background-color: var(--neutral-emphasis);
