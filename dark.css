@@ -99,15 +99,12 @@ div[data-refs-self*='"card"'] > div:first-child {
 
 /* cloze */
 a.cloze {
-  font-weight: lighter;
+  opacity: 0.5;
 }
 
 a.cloze:hover {
   color: var(--open-emphasis);
-}
-
-a.cloze-revealed {
-  font-weight: normal;
+  opacity: 1;
 }
 
 /* tag */
