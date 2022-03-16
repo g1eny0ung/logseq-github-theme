@@ -3,6 +3,10 @@
   "description": "😻 GitHub themes for Logseq.",
   "author": "Yue Yang <g1enyy0ung@gmail.com>",
   "repository": "g1eny0ung/logseq-github-theme",
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
   "logseq": {
     "themes": [
       {
@@ -24,5 +28,10 @@
         "mode": "dark"
       }
     ]
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.9"
   }
 }

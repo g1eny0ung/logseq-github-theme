@@ -1,0 +1,197 @@
+@use "common"
+
+.white-theme,
+html[data-theme="light"]
+  --fg-default: #24292f
+  --fg-muted: #57606a
+  --fg-on-emphasis: #ffffff
+  --canvas-default: #ffffff
+  --canvas-overlay: #ffffff
+  --canvas-subtle: #f6f8fa
+  --scale-gray-1: #eaeef2
+  --scale-gray-2: #d0d7de
+  --scale-gray-3: #afb8c1
+  --scale-gray-4: #8c959f
+  --scale-gray-5: #6e7781
+  --border-default: #d0d7de
+  --border-muted: hsla(210, 18%, 87%, 1)
+  --neutral-emphasis: #6e7781
+  --neutral-muted: rgba(175, 184, 193, 0.2)
+  --neutral-subtle: rgba(234, 238, 242, 0.5)
+  --accent-fg: #0969da
+  --accent-emphasis: #0969da
+  --attention-fg: #9a6700
+  --attention-emphasis: #bf8700
+  --severe-fg: #bc4c00
+  --severe-emphasis: #bc4c00
+  --severe-muted: rgba(251, 143, 68, 0.4)
+  --danger-emphasis: #cf222e
+  --open-fg: #1a7f37
+  --open-emphasis: #2da44e
+  --done-fg: #8250df
+  --done-emphasis: #8250df
+
+  --ls-primary-background-color: var(--canvas-default)
+  --ls-secondary-background-color: var(--canvas-subtle)
+  --ls-tertiary-background-color: var(--scale-gray-1)
+  --ls-quaternary-background-color: var(--scale-gray-2)
+  --ls-table-tr-even-background-color: var(--canvas-subtle)
+  --ls-active-primary-color: var(--accent-fg)
+  --ls-active-secondary-color: var(--accent-emphasis)
+  --ls-block-properties-background-color: #f7f7f7
+  --ls-page-properties-background-color: #f7f7f7
+  --ls-block-ref-link-text-color: var(--neutral-emphasis)
+  --ls-search-background-color: var(--ls-primary-background-color)
+  --ls-border-color: var(--border-default)
+  --ls-secondary-border-color: var(--border-muted)
+  --ls-guideline-color: var(--neutral-muted)
+  --ls-menu-hover-color: var(--ls-secondary-background-color)
+  --ls-primary-text-color: var(--fg-default)
+  --ls-secondary-text-color: var(--fg-muted)
+  --ls-title-text-color: var(--fg-default)
+  --ls-link-text-color: var(--ls-active-primary-color)
+  --ls-link-text-hover-color: var(--ls-active-secondary-color)
+  --ls-link-ref-text-color: var(--ls-link-text-color)
+  --ls-link-ref-text-hover-color: var(--ls-link-text-hover-color)
+  --ls-tag-text-color: var(--ls-link-text-color)
+  --ls-tag-text-hover-color: var(--ls-link-text-hover-color)
+  --ls-slide-background-color: var(--ls-primary-background-color)
+  --ls-block-bullet-border-color: var(--neutral-subtle)
+  --ls-block-bullet-color: var(--neutral-emphasis)
+  --ls-block-highlight-color: var(--canvas-overlay)
+  --ls-selection-background-color: var(--accent-emphasis)
+  --ls-page-checkbox-color: #9dbbd8
+  --ls-page-checkbox-border-color: var(--ls-page-checkbox-color)
+  --ls-page-blockquote-color: var(--ls-primary-text-color)
+  --ls-page-blockquote-bg-color: var(--ls-secondary-background-color)
+  --ls-page-blockquote-border-color: var(--ls-border-color)
+  --ls-page-inline-code-color: var(--fg-on-emphasis)
+  --ls-page-inline-code-bg-color: var(--neutral-emphasis)
+  --ls-scrollbar-foreground-color: var(--border-muted)
+  --ls-scrollbar-background-color: var(--canvas-overlay)
+  --ls-scrollbar-thumb-hover-color: var(--border-default)
+  --ls-head-text-color: var(--ls-link-text-color)
+  --ls-cloze-text-color: var(--open-fg)
+  --ls-icon-color: var(--fg-default)
+  --ls-search-icon-color: var(--ls-link-text-color)
+  --ls-a-chosen-bg: var(--ls-secondary-background-color)
+  --ls-right-sidebar-code-bg-color: var(--ls-secondary-background-color)
+  --color-level-1: var(--ls-secondary-background-color)
+  --color-level-2: var(--ls-tertiary-background-color)
+  --color-level-3: var(--ls-quaternary-background-color)
+  --color-level-4: var(--scale-gray-3)
+  --color-level-5: var(--scale-gray-4)
+  --color-level-6: var(--scale-gray-5)
+
+// button
+a.button
+  color: var(--ls-icon-color)
+
+// card
+div[data-refs-self*='"card"']
+  margin: 0.5em
+  background-color: var(--canvas-subtle)
+  border: 1px solid var(--border-default)
+  box-shadow: none
+
+  > div:first-child
+    margin-left: -0.5em
+
+// cloze
+a.cloze
+  opacity: 0.5
+
+  &:hover
+    color: var(--open-emphasis)
+    opacity: 1
+
+// tag
+a.tag
+  padding: 0.1em 0.5em
+  background-color: var(--accent-fg)
+  color: #fff !important
+  border-radius: 4px
+
+  &:hover
+    background-color: var(--accent-emphasis)
+
+// checkbox
+.form-checkbox
+  border-radius: 4px
+
+  &:checked
+    background-color: var(--done-emphasis)
+    border-color: var(--done-fg)
+
+  &:focus
+    border-color: var(--ls-border-color)
+
+// markers
+span
+  +common.markers
+
+table
+  .form-checkbox
+    background-color: transparent !important
+    border: 1px solid var(--ls-border-color) !important
+
+    &:checked
+      background-color: var(--accent-emphasis) !important
+      border: 1px solid var(--accent-fg) !important
+
+// search
+.recent-search div[data-tooltipped] .ui__toggle > span[aria-checked="true"]
+  background-color: var(--ls-link-text-color)
+
+// menu-link
+a.menu-link
+  &:hover
+    background-color: var(--accent-emphasis)
+    color: var(--fg-on-emphasis)
+
+    a.page-ref
+      color: var(--fg-on-emphasis)
+      text-decoration: underline
+
+    span.page-reference
+      &:hover
+        background: unset
+
+        span
+          opacity: 1
+
+      a.page-ref
+        text-decoration: unset
+
+      span
+        color: var(--fg-on-emphasis)
+
+    p
+      color: var(--fg-on-emphasis)
+
+// all pages
+.cp__all_pages .actions
+  .l .actions-wrap button.ui__button
+    background-color: var(--neutral-emphasis)
+    opacity: 1
+
+  &.has-selected .l .actions-wrap button.ui__button
+    background-color: var(--danger-emphasis)
+
+// block
+.block-children-left-border:hover
+  background-color: var(--neutral-emphasis)
+
+// code
+html[data-theme="light"]
+  .CodeMirror
+    background: var(--neutral-muted)
+
+    .CodeMirror-gutters
+      background-color: transparent
+
+  .extensions__code-lang
+    top: -0.3em
+    padding-left: 0.5em
+    padding-right: 0.5em
+    background: var(--neutral-muted)

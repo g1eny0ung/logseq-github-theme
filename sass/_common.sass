@@ -1,0 +1,26 @@
+@use "sass:string"
+
+=marker-text($marker, $color)
+  .block-marker.#{string.to-upper-case($marker)}
+    color: var(--#{$color}-emphasis)
+
+=marker($marker, $color)
+  &.#{$marker}
+    .form-checkbox
+      background-color: var(--#{$color}-emphasis)
+      border-color: var(--#{$color}-fg)
+    +marker-text($marker, $color)
+
+=done-margin($marker: done)
+  &.#{$marker}
+    div[data-tooltipped]
+      margin-right: 0.25em
+
+=markers
+  @each $marker in [later, todo, now, doing, done, canceled]
+    @if $marker == later or $marker == todo
+      +marker($marker, attention)
+    @if $marker == now or $marker == doing
+      +marker($marker, open)
+    @if $marker == done or $marker == canceled
+      +done-margin($marker)
