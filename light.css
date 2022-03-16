@@ -88,11 +88,15 @@ a.button {
 
 /* cloze */
 a.cloze {
-  font-weight: 500;
+  font-weight: lighter;
 }
 
 a.cloze:hover {
   color: var(--open-emphasis);
+}
+
+a.cloze-revealed {
+  font-weight: normal;
 }
 
 /* tag */
