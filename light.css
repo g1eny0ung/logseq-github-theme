@@ -1,3 +1,123 @@
+a.button {
+  color: var(--ls-icon-color);
+}
+
+div[data-refs-self*='"card"'] {
+  margin: 0.5em;
+  background-color: var(--canvas-subtle);
+  border: 1px solid var(--border-default);
+  box-shadow: none;
+}
+div[data-refs-self*='"card"'] > div:first-child {
+  margin-left: -0.5em;
+}
+
+.form-checkbox {
+  border-radius: 4px;
+}
+.form-checkbox:checked {
+  background-color: var(--done-emphasis);
+  border-color: var(--done-fg);
+}
+.form-checkbox:focus {
+  border-color: var(--ls-border-color);
+}
+
+a.cloze {
+  opacity: 0.5;
+}
+a.cloze:hover {
+  color: var(--open-emphasis);
+  opacity: 1;
+}
+
+span.later .form-checkbox {
+  background-color: var(--attention-emphasis);
+  border-color: var(--attention-fg);
+}
+span.later .block-marker.LATER {
+  color: var(--attention-emphasis);
+}
+span.todo .form-checkbox {
+  background-color: var(--attention-emphasis);
+  border-color: var(--attention-fg);
+}
+span.todo .block-marker.TODO {
+  color: var(--attention-emphasis);
+}
+span.now .form-checkbox {
+  background-color: var(--open-emphasis);
+  border-color: var(--open-fg);
+}
+span.now .block-marker.NOW {
+  color: var(--open-emphasis);
+}
+span.doing .form-checkbox {
+  background-color: var(--open-emphasis);
+  border-color: var(--open-fg);
+}
+span.doing .block-marker.DOING {
+  color: var(--open-emphasis);
+}
+span.done div[data-tooltipped] {
+  margin-right: 0.25em;
+}
+span.canceled div[data-tooltipped] {
+  margin-right: 0.25em;
+}
+
+a.menu-link:hover {
+  background-color: var(--accent-emphasis);
+  color: var(--fg-on-emphasis);
+}
+a.menu-link:hover a.page-ref {
+  color: var(--fg-on-emphasis);
+  text-decoration: underline;
+}
+a.menu-link:hover span.page-reference:hover {
+  background: unset;
+}
+a.menu-link:hover span.page-reference:hover span {
+  opacity: 1;
+}
+a.menu-link:hover span.page-reference a.page-ref {
+  text-decoration: unset;
+}
+a.menu-link:hover span.page-reference span {
+  color: var(--fg-on-emphasis);
+}
+a.menu-link:hover p {
+  color: var(--fg-on-emphasis);
+}
+
+.recent-search div[data-tooltipped] .ui__toggle > span[aria-checked=true] {
+  background-color: var(--ls-link-text-color);
+}
+
+.sidebar-item {
+  border-bottom: 3px solid var(--border-default);
+  box-shadow: none;
+}
+
+table .form-checkbox {
+  background-color: transparent !important;
+  border: 1px solid var(--ls-border-color) !important;
+}
+table .form-checkbox:checked {
+  background-color: var(--accent-emphasis) !important;
+  border: 1px solid var(--accent-fg) !important;
+}
+
+a.tag {
+  padding: 0.1em 0.5em;
+  background-color: var(--accent-fg);
+  color: #fff !important;
+  border-radius: 4px;
+}
+a.tag:hover {
+  background-color: var(--accent-emphasis);
+}
+
 .white-theme,
 html[data-theme=light] {
   --fg-default: #24292f;
@@ -79,121 +199,6 @@ html[data-theme=light] {
   --color-level-4: var(--scale-gray-3);
   --color-level-5: var(--scale-gray-4);
   --color-level-6: var(--scale-gray-5);
-}
-
-a.button {
-  color: var(--ls-icon-color);
-}
-
-div[data-refs-self*='"card"'] {
-  margin: 0.5em;
-  background-color: var(--canvas-subtle);
-  border: 1px solid var(--border-default);
-  box-shadow: none;
-}
-div[data-refs-self*='"card"'] > div:first-child {
-  margin-left: -0.5em;
-}
-
-a.cloze {
-  opacity: 0.5;
-}
-a.cloze:hover {
-  color: var(--open-emphasis);
-  opacity: 1;
-}
-
-a.tag {
-  padding: 0.1em 0.5em;
-  background-color: var(--accent-fg);
-  color: #fff !important;
-  border-radius: 4px;
-}
-a.tag:hover {
-  background-color: var(--accent-emphasis);
-}
-
-.form-checkbox {
-  border-radius: 4px;
-}
-.form-checkbox:checked {
-  background-color: var(--done-emphasis);
-  border-color: var(--done-fg);
-}
-.form-checkbox:focus {
-  border-color: var(--ls-border-color);
-}
-
-span.later .form-checkbox {
-  background-color: var(--attention-emphasis);
-  border-color: var(--attention-fg);
-}
-span.later .block-marker.LATER {
-  color: var(--attention-emphasis);
-}
-span.todo .form-checkbox {
-  background-color: var(--attention-emphasis);
-  border-color: var(--attention-fg);
-}
-span.todo .block-marker.TODO {
-  color: var(--attention-emphasis);
-}
-span.now .form-checkbox {
-  background-color: var(--open-emphasis);
-  border-color: var(--open-fg);
-}
-span.now .block-marker.NOW {
-  color: var(--open-emphasis);
-}
-span.doing .form-checkbox {
-  background-color: var(--open-emphasis);
-  border-color: var(--open-fg);
-}
-span.doing .block-marker.DOING {
-  color: var(--open-emphasis);
-}
-span.done div[data-tooltipped] {
-  margin-right: 0.25em;
-}
-span.canceled div[data-tooltipped] {
-  margin-right: 0.25em;
-}
-
-table .form-checkbox {
-  background-color: transparent !important;
-  border: 1px solid var(--ls-border-color) !important;
-}
-table .form-checkbox:checked {
-  background-color: var(--accent-emphasis) !important;
-  border: 1px solid var(--accent-fg) !important;
-}
-
-.recent-search div[data-tooltipped] .ui__toggle > span[aria-checked=true] {
-  background-color: var(--ls-link-text-color);
-}
-
-a.menu-link:hover {
-  background-color: var(--accent-emphasis);
-  color: var(--fg-on-emphasis);
-}
-a.menu-link:hover a.page-ref {
-  color: var(--fg-on-emphasis);
-  text-decoration: underline;
-}
-a.menu-link:hover span.page-reference:hover {
-  background: unset;
-}
-a.menu-link:hover span.page-reference:hover span {
-  opacity: 1;
-}
-a.menu-link:hover span.page-reference a.page-ref {
-  text-decoration: unset;
-}
-a.menu-link:hover span.page-reference span {
-  color: var(--fg-on-emphasis);
-}
-a.menu-link:hover p {
-  color: var(--fg-on-emphasis);
 }
 
 .cp__all_pages .actions .l .actions-wrap button.ui__button {
