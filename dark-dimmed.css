@@ -68,7 +68,7 @@ span.canceled div[data-tooltipped] {
 
 a.menu-link:hover {
   background-color: var(--accent-emphasis);
-  color: var(--fg-on-emphasis);
+  color: var(--fg-on-emphasis) !important;
 }
 a.menu-link:hover a.page-ref {
   color: var(--fg-on-emphasis);
