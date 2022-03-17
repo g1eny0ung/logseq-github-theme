@@ -25,6 +25,10 @@
     @if $marker == done or $marker == canceled
       +done-margin($marker)
 
+::selection
+  background: var(--ls-selection-background-color)
+  color: var(--fg-on-emphasis)
+
 // button
 a.button
   color: var(--ls-icon-color)
