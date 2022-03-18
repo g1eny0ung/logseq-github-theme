@@ -6,7 +6,7 @@
 <h1 align="center"><a href="https://logseq.com/" alt="logseq">logseq</a>-github-theme</h1>
 
 <p align="center">😻 GitHub themes for Logseq.</p>
-<p align="center"><b>Now in Marketplace!</b> 🎉📢 You can install it via **Plugins -> Marketplace -> Themes**.</p>
+<p align="center"><b>Now in Marketplace!</b> 🎉📢 You can install it via <b>Plugins -> Marketplace -> Themes</b>.</p>
 
 ## Screenshots
 
