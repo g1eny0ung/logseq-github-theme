@@ -1,8 +1,12 @@
-<img src="./icon.png" alt="logo" height="128" />
+<!-- markdownlint-disable MD033 MD041 -->
 
-# [logseq](https://logseq.com/)-github-theme
+<p align="center">
+  <img src="https://raw.githubusercontent.com/g1eny0ung/logseq-github-theme/main/icon.png" alt="logo" height="128" />
+</p>
+<h1 align="center"><a href="https://logseq.com/" alt="logseq">logseq</a>-github-theme</h1>
 
-😻 GitHub themes for Logseq.
+<p align="center">😻 GitHub themes for Logseq.</p>
+<p align="center"><b>Now in Marketplace!</b> 🎉📢 You can install it via **Plugins -> Marketplace -> Themes**.</p>
 
 ## Screenshots
 
@@ -23,7 +27,7 @@ Download the theme (e.g. `light.css`) into your Notes folder and rename it to `l
 Paste this line to your `logseq/custom.css` file:
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/g1eny0ung/logseq-github-theme@master/light.css");
+@import url('https://cdn.jsdelivr.net/gh/g1eny0ung/logseq-github-theme@master/light.css');
 ```
 
 OR
@@ -38,6 +42,8 @@ Paste this line to your `logseq/config.edn` file:
 
 ## License
 
-MIT @ [g1eny0ung](https://github.com/g1eny0ung)
+MIT
+
+## Credits
 
 Thanks to [github-vscode-theme](https://github.com/primer/github-vscode-theme) for the inspiration and logo.
