@@ -3,9 +3,9 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/g1eny0ung/logseq-github-theme/main/icon.png" alt="logo" height="128" />
 </p>
-<h1 align="center"><a href="https://logseq.com/" alt="logseq">logseq</a>-github-theme</h1>
+<h1 align="center">logseq-github-theme</h1>
 
-<p align="center">😻 GitHub themes for Logseq.</p>
+<p align="center">😻 GitHub themes for <a href="https://logseq.com/">Logseq</a>.</p>
 <p align="center"><b>Now in Marketplace!</b> 🎉📢 You can install it via <b>Plugins -> Marketplace -> Themes</b>.</p>
 
 ## Screenshots
