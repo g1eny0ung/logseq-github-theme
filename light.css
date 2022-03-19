@@ -1,8 +1,3 @@
-::selection {
-  background: var(--ls-selection-background-color);
-  color: var(--fg-on-emphasis);
-}
-
 a.button {
   color: var(--ls-icon-color);
 }
@@ -143,6 +138,7 @@ html[data-theme=light] {
   --neutral-subtle: rgba(234, 238, 242, 0.5);
   --accent-fg: #0969da;
   --accent-emphasis: #0969da;
+  --accent-muted: rgba(84, 174, 255, 0.4);
   --attention-fg: #9a6700;
   --attention-emphasis: #bf8700;
   --severe-fg: #bc4c00;
@@ -181,7 +177,7 @@ html[data-theme=light] {
   --ls-block-bullet-border-color: var(--neutral-subtle);
   --ls-block-bullet-color: var(--neutral-emphasis);
   --ls-block-highlight-color: var(--canvas-overlay);
-  --ls-selection-background-color: var(--accent-emphasis);
+  --ls-selection-background-color: var(--accent-muted);
   --ls-page-checkbox-color: #9dbbd8;
   --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
   --ls-page-blockquote-color: var(--ls-primary-text-color);
