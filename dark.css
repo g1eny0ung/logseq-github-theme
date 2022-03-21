@@ -175,7 +175,7 @@ html[data-theme=dark] {
   --ls-slide-background-color: var(--ls-primary-background-color);
   --ls-block-bullet-border-color: var(--severe-fg);
   --ls-block-bullet-color: var(--severe-emphasis);
-  --ls-block-highlight-color: var(--canvas-overlay);
+  --ls-block-highlight-color: var(--accent-muted);
   --ls-selection-background-color: var(--accent-muted);
   --ls-page-checkbox-color: #6093a0;
   --ls-page-checkbox-border-color: var(--ls-page-checkbox-color);
