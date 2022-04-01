@@ -27,6 +27,16 @@
         "url": "./dark-dimmed.css",
         "description": "😻 GitHub Dark Dimmed theme for Logseq.",
         "mode": "dark"
+      },
+      {
+        "name": "GitHub Light Default With Dark",
+        "url": "./light-dark.css",
+        "description": "😻 GitHub Light/Dark theme for Logseq."
+      },
+      {
+        "name": "GitHub Light Default With Dark Dimmed",
+        "url": "./light-dark-dimmed.css",
+        "description": "😻 GitHub Light/Dark-Dimmed theme for Logseq."
       }
     ],
     "id": "logseq-github-theme"
