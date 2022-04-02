@@ -2,6 +2,10 @@ html:not(.is-native-android) {
   font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif !important;
 }
 
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+}
+
 a.button {
   color: var(--ls-icon-color);
 }
@@ -218,9 +222,9 @@ html[data-theme=light] {
   --ls-page-blockquote-border-color: var(--ls-border-color);
   --ls-page-inline-code-color: var(--fg-on-emphasis);
   --ls-page-inline-code-bg-color: var(--neutral-emphasis);
-  --ls-scrollbar-foreground-color: var(--border-muted);
-  --ls-scrollbar-background-color: var(--canvas-overlay);
-  --ls-scrollbar-thumb-hover-color: var(--border-default);
+  --ls-scrollbar-foreground-color: var(--border-default);
+  --ls-scrollbar-background-color: none;
+  --ls-scrollbar-thumb-hover-color: var(--neutral-emphasis);
   --ls-head-text-color: var(--ls-link-text-color);
   --ls-cloze-text-color: var(--open-fg);
   --ls-icon-color: var(--fg-default);
