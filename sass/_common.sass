@@ -9,6 +9,7 @@
     .form-checkbox
       background-color: var(--#{$color}-emphasis)
       border-color: var(--#{$color}-fg)
+
     +marker-text($marker, $color)
 
 =done-margin($marker: done)
@@ -47,7 +48,7 @@ div[data-refs-self*='"card"']
 //
 // Default `done`
 .form-checkbox
-  border-radius: 4px
+  border-radius: 6px
 
   &:checked
     background-color: var(--done-emphasis)
@@ -118,7 +119,35 @@ a.tag
   padding: 0.1em 0.5em
   background-color: var(--accent-fg)
   color: #fff !important
-  border-radius: 4px
+  border-radius: 2em
 
   &:hover
     background-color: var(--accent-emphasis)
+
+=x-arrow
+  width: 10px
+  height: 10px
+  background: var(--canvas-default)
+  border: 1px solid var(--border-default)
+  transform: rotate(45deg)
+
+.tippy-popper
+  &[x-placement^=top] [x-arrow]
+    +x-arrow
+
+    bottom: -5px
+    border-top: none
+    border-left: none
+
+  &[x-placement^=bottom] [x-arrow]
+    +x-arrow
+
+    top: -5px
+    border-bottom: none
+    border-right: none
+
+.tippy-wrapper
+  background-color: var(--canvas-default)
+  border: 1px solid var(--border-default)
+  border-radius: 6px
+  box-shadow: var(--shadow-large)

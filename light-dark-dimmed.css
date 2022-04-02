@@ -17,7 +17,7 @@ div[data-refs-self*='"card"'] > div:first-child {
 }
 
 .form-checkbox {
-  border-radius: 4px;
+  border-radius: 6px;
 }
 .form-checkbox:checked {
   background-color: var(--done-emphasis);
@@ -116,10 +116,38 @@ a.tag {
   padding: 0.1em 0.5em;
   background-color: var(--accent-fg);
   color: #fff !important;
-  border-radius: 4px;
+  border-radius: 2em;
 }
 a.tag:hover {
   background-color: var(--accent-emphasis);
+}
+
+.tippy-popper[x-placement^=top] [x-arrow] {
+  width: 10px;
+  height: 10px;
+  background: var(--canvas-default);
+  border: 1px solid var(--border-default);
+  transform: rotate(45deg);
+  bottom: -5px;
+  border-top: none;
+  border-left: none;
+}
+.tippy-popper[x-placement^=bottom] [x-arrow] {
+  width: 10px;
+  height: 10px;
+  background: var(--canvas-default);
+  border: 1px solid var(--border-default);
+  transform: rotate(45deg);
+  top: -5px;
+  border-bottom: none;
+  border-right: none;
+}
+
+.tippy-wrapper {
+  background-color: var(--canvas-default);
+  border: 1px solid var(--border-default);
+  border-radius: 6px;
+  box-shadow: var(--shadow-large);
 }
 
 .white-theme,
@@ -137,6 +165,7 @@ html[data-theme=light] {
   --scale-gray-5: #6e7781;
   --border-default: #d0d7de;
   --border-muted: hsla(210, 18%, 87%, 1);
+  --shadow-large: 0 8px 24px rgba(140, 149, 159, 0.2);
   --neutral-emphasis: #6e7781;
   --neutral-muted: rgba(175, 184, 193, 0.2);
   --neutral-subtle: rgba(234, 238, 242, 0.5);
@@ -249,6 +278,7 @@ html[data-theme=dark] {
   --scale-gray-3: #768390;
   --border-default: #444c56;
   --border-muted: #373e47;
+  --shadow-large: 0 8px 24px #1c2128;
   --neutral-emphasis: #636e7b;
   --neutral-muted: rgba(99, 110, 123, 0.4);
   --accent-fg: #539bf5;
