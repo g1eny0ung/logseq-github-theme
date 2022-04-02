@@ -24,19 +24,17 @@ Here's how to install manually:
 
 ### Offline
 
-Download the theme (e.g. `light.css`) into your Notes folder and rename it to `logseq/custom.css`.
+Download the theme (e.g. `light.css`) into your notes folder and rename it to `logseq/custom.css`.
 
 ### Online
 
-Paste this line to your `logseq/custom.css` file:
+Paste this line to your `logseq/custom.css`:
 
 ```css
 @import url('https://cdn.jsdelivr.net/gh/g1eny0ung/logseq-github-theme@master/light.css');
 ```
 
-OR
-
-Paste this line to your `logseq/config.edn` file:
+Or paste this line to your `logseq/config.edn`:
 
 ```edn
 {
