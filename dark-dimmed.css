@@ -1,3 +1,7 @@
+html:not(.is-native-android) {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif !important;
+}
+
 a.button {
   color: var(--ls-icon-color);
 }

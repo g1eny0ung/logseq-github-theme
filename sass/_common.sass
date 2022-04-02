@@ -25,6 +25,10 @@
     @if $marker == done or $marker == canceled
       +done-margin($marker)
 
+html:not(.is-native-android)
+  // https://primer.style/design/foundations/typography
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif !important
+
 // button
 a.button
   color: var(--ls-icon-color)
