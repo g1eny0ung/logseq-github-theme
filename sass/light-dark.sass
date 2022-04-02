@@ -46,7 +46,7 @@ html[data-theme="light"]
   --ls-search-background-color: var(--ls-primary-background-color)
   --ls-border-color: var(--border-default)
   --ls-secondary-border-color: var(--border-muted)
-  --ls-guideline-color: var(--neutral-muted)
+  --ls-guideline-color: var(--border-muted)
   --ls-menu-hover-color: var(--ls-secondary-background-color)
   --ls-primary-text-color: var(--fg-default)
   --ls-secondary-text-color: var(--fg-muted)
@@ -58,7 +58,7 @@ html[data-theme="light"]
   --ls-tag-text-color: var(--ls-link-text-color)
   --ls-tag-text-hover-color: var(--ls-link-text-hover-color)
   --ls-slide-background-color: var(--ls-primary-background-color)
-  --ls-block-bullet-border-color: var(--neutral-subtle)
+  --ls-block-bullet-border-color: var(--border-default)
   --ls-block-bullet-color: var(--neutral-emphasis)
   --ls-block-highlight-color: var(--accent-muted)
   --ls-selection-background-color: var(--accent-muted)
@@ -152,13 +152,11 @@ html[data-theme="dark"]
   --ls-active-secondary-color: var(--accent-emphasis)
   --ls-block-properties-background-color: var(--canvas-subtle)
   --ls-page-properties-background-color: var(--canvas-subtle)
-  // different with light theme
-  --ls-block-ref-link-text-color: var(--severe-fg)
+  --ls-block-ref-link-text-color: var(--neutral-emphasis)
   --ls-search-background-color: var(--ls-primary-background-color)
   --ls-border-color: var(--border-default)
   --ls-secondary-border-color: var(--border-muted)
-  // different with light theme
-  --ls-guideline-color: var(--severe-muted)
+  --ls-guideline-color: var(--border-muted)
   --ls-menu-hover-color: var(--ls-secondary-background-color)
   --ls-primary-text-color: var(--fg-default)
   --ls-secondary-text-color: var(--fg-muted)
@@ -170,10 +168,8 @@ html[data-theme="dark"]
   --ls-tag-text-color: var(--ls-link-text-color)
   --ls-tag-text-hover-color: var(--ls-link-text-hover-color)
   --ls-slide-background-color: var(--ls-primary-background-color)
-  // different with light theme
-  --ls-block-bullet-border-color: var(--severe-fg)
-  // different with light theme
-  --ls-block-bullet-color: var(--severe-emphasis)
+  --ls-block-bullet-border-color: var(--border-default)
+  --ls-block-bullet-color: var(--neutral-emphasis)
   --ls-block-highlight-color: var(--accent-muted)
   --ls-selection-background-color: var(--accent-muted)
   --ls-page-checkbox-color: #6093a0
@@ -212,11 +208,7 @@ html[data-theme="dark"]
 
   // block
   .block-children-left-border:hover
-    background-color: var(--severe-emphasis) // different with light theme
-
-  // different with light theme
-  .block-ref:hover
-    color: var(--severe-fg)
+    background-color: var(--neutral-emphasis)
 
   // code
   .CodeMirror
