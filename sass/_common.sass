@@ -142,6 +142,13 @@ a.tag
     border-top: none
     border-left: none
 
+  &[x-placement^=left] [x-arrow]
+    +x-arrow
+
+    right: -5px
+    border-bottom: none
+    border-left: none
+
   &[x-placement^=bottom] [x-arrow]
     +x-arrow
 
@@ -149,7 +156,18 @@ a.tag
     border-bottom: none
     border-right: none
 
-.tippy-wrapper
+  &[x-placement^=right] [x-arrow]
+    +x-arrow
+
+    left: -5px
+    border-top: none
+    border-right: none
+
+.tippy-tooltip
+  border-radius: 6px
+
+.tippy-wrapper,
+.tippy-tooltip-content > div
   background-color: var(--canvas-default)
   border: 1px solid var(--border-default)
   border-radius: 6px

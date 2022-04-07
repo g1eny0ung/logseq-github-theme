@@ -136,6 +136,16 @@ a.tag:hover {
   border-top: none;
   border-left: none;
 }
+.tippy-popper[x-placement^=left] [x-arrow] {
+  width: 10px;
+  height: 10px;
+  background: var(--canvas-default);
+  border: 1px solid var(--border-default);
+  transform: rotate(45deg);
+  right: -5px;
+  border-bottom: none;
+  border-left: none;
+}
 .tippy-popper[x-placement^=bottom] [x-arrow] {
   width: 10px;
   height: 10px;
@@ -146,8 +156,23 @@ a.tag:hover {
   border-bottom: none;
   border-right: none;
 }
+.tippy-popper[x-placement^=right] [x-arrow] {
+  width: 10px;
+  height: 10px;
+  background: var(--canvas-default);
+  border: 1px solid var(--border-default);
+  transform: rotate(45deg);
+  left: -5px;
+  border-top: none;
+  border-right: none;
+}
 
-.tippy-wrapper {
+.tippy-tooltip {
+  border-radius: 6px;
+}
+
+.tippy-wrapper,
+.tippy-tooltip-content > div {
   background-color: var(--canvas-default);
   border: 1px solid var(--border-default);
   border-radius: 6px;
