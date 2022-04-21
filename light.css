@@ -76,26 +76,22 @@ span.canceled div[data-tooltipped] {
 
 a.menu-link:hover {
   background-color: var(--accent-emphasis);
-  color: var(--fg-on-emphasis) !important;
-}
-a.menu-link:hover a.page-ref {
   color: var(--fg-on-emphasis);
+}
+a.menu-link:hover .block-parents * {
+  color: var(--fg-on-emphasis);
+}
+a.menu-link:hover a:hover {
   text-decoration: underline;
 }
-a.menu-link:hover span.page-reference:hover {
+a.menu-link:hover span.page-reference {
   background: unset;
 }
-a.menu-link:hover span.page-reference:hover span {
-  opacity: 1;
+a.menu-link:hover span.page-reference:hover {
+  text-decoration: underline;
 }
-a.menu-link:hover span.page-reference a.page-ref {
-  text-decoration: unset;
-}
-a.menu-link:hover span.page-reference span {
-  color: var(--fg-on-emphasis);
-}
-a.menu-link:hover p {
-  color: var(--fg-on-emphasis);
+a.menu-link:hover .chosen {
+  background-color: unset;
 }
 
 .recent-search div[data-tooltipped] .ui__toggle > span[aria-checked=true] {

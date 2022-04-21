@@ -76,27 +76,23 @@ span
 a.menu-link
   &:hover
     background-color: var(--accent-emphasis)
-    color: var(--fg-on-emphasis) !important
+    color: var(--fg-on-emphasis)
 
-    a.page-ref
+    .block-parents *
       color: var(--fg-on-emphasis)
+
+    a:hover
       text-decoration: underline
 
     span.page-reference
+      background: unset
+
       &:hover
-        background: unset
+        text-decoration: underline
 
-        span
-          opacity: 1
-
-      a.page-ref
-        text-decoration: unset
-
-      span
-        color: var(--fg-on-emphasis)
-
-    p
-      color: var(--fg-on-emphasis)
+    // cmd+shift+p
+    .chosen
+      background-color: unset
 
 // search
 .recent-search div[data-tooltipped] .ui__toggle > span[aria-checked="true"]
