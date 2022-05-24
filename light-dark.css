@@ -208,8 +208,8 @@ html[data-theme=light] {
   --accent-fg: #0969da;
   --accent-emphasis: #0969da;
   --accent-muted: rgba(84, 174, 255, 0.4);
-  --attention-fg: #9ca3af;
-  --attention-emphasis: #9ca3af;
+  --attention-fg: #ccc;
+  --attention-emphasis: #ccc;
   --attention-todo-color: #504d47;
   --severe-fg: #bc4c00;
   --severe-emphasis: #bc4c00;
@@ -322,8 +322,8 @@ html[data-theme=dark] {
   --accent-fg: #58a6ff;
   --accent-emphasis: #1f6feb;
   --accent-muted: rgba(56, 139, 253, 0.4);
-  --attention-fg: #9ca3af;
-  --attention-emphasis: #9ca3af;
+  --attention-fg: #aaa;
+  --attention-emphasis: #aaa;
   --attention-todo-color: rgb(255 255 255 / 90%);
   --severe-fg: #db6d28;
   --severe-emphasis: #bd561d;
