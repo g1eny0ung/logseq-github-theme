@@ -20,7 +20,7 @@
 =markers
   @each $marker in [later, todo, now, doing, done, canceled]
     @if $marker == later or $marker == todo
-      +marker($marker, attention)
+      +marker($marker, neutral)
     @if $marker == now or $marker == doing
       +marker($marker, open)
     @if $marker == done or $marker == canceled

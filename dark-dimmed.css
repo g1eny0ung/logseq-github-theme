@@ -40,18 +40,18 @@ a.cloze:hover {
 }
 
 span.later .form-checkbox {
-  background-color: var(--attention-emphasis);
-  border-color: var(--attention-fg);
+  background-color: var(--neutral-emphasis);
+  border-color: var(--neutral-fg);
 }
 span.later .block-marker.LATER {
-  color: var(--attention-emphasis);
+  color: var(--neutral-emphasis);
 }
 span.todo .form-checkbox {
-  background-color: var(--attention-emphasis);
-  border-color: var(--attention-fg);
+  background-color: var(--neutral-emphasis);
+  border-color: var(--neutral-fg);
 }
 span.todo .block-marker.TODO {
-  color: var(--attention-emphasis);
+  color: var(--neutral-emphasis);
 }
 span.now .form-checkbox {
   background-color: var(--open-emphasis);
