@@ -62,7 +62,7 @@ span.todo .form-checkbox {
   border-color: var(--attention-fg);
 }
 span.todo .block-marker.TODO {
-  color: var(--attention-emphasis);
+  color: var(--attention-todo-color);
 }
 span.now .form-checkbox {
   background-color: var(--open-emphasis);
@@ -76,7 +76,7 @@ span.doing .form-checkbox {
   border-color: var(--open-fg);
 }
 span.doing .block-marker.DOING {
-  color: var(--open-emphasis);
+  color: var(--open-doing-color);
 }
 span.done div[data-tooltipped] {
   margin-right: 0.25em;
@@ -210,12 +210,14 @@ html[data-theme=light] {
   --accent-muted: rgba(84, 174, 255, 0.4);
   --attention-fg: #9ca3af;
   --attention-emphasis: #9ca3af;
+  --attention-todo-color: #504d47;
   --severe-fg: #bc4c00;
   --severe-emphasis: #bc4c00;
   --severe-muted: rgba(251, 143, 68, 0.4);
   --danger-emphasis: #cf222e;
   --open-fg: #2da44e;
   --open-emphasis: #2da44e;
+  --open-doing-color: #504d47;
   --done-fg: #0dcf82;
   --done-emphasis: #0dcf82;
   --ls-primary-background-color: var(--canvas-default);
@@ -320,14 +322,16 @@ html[data-theme=dark] {
   --accent-fg: #58a6ff;
   --accent-emphasis: #1f6feb;
   --accent-muted: rgba(56, 139, 253, 0.4);
-  --attention-fg: #e9ecef;
-  --attention-emphasis: #e9ecef;
+  --attention-fg: #9ca3af;
+  --attention-emphasis: #9ca3af;
+  --attention-todo-color: rgb(255 255 255 / 90%);
   --severe-fg: #db6d28;
   --severe-emphasis: #bd561d;
   --severe-muted: rgba(219, 109, 40, 0.4);
   --danger-emphasis: #da3633;
   --open-fg: #59df50;
   --open-emphasis: #59df50;
+  --open-doing-color: rgb(255 255 255 / 90%);
   --done-fg: #0dcf82;
   --done-emphasis: #0dcf82;
   --ls-primary-background-color: var(--canvas-default);
