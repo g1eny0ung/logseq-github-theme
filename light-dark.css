@@ -7,10 +7,10 @@ html:not(.is-native-android) {
 }
 #main-content-container .journal h1.title:before,
 #main-content-container .is-journals h1.title:before {
-  content: "??";
+  content: "🗓";
   vertical-align: text-bottom;
   margin-right: 0.3em;
-  font-size: 0.8em;
+  font-size: 0.75em;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -409,3 +409,43 @@ html[data-theme=dark] .extensions__code-lang {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+
+.content .form-checkbox {
+  border-radius: 50%;
+  z-index: 1;
+  transform: scale(1.1);
+  position: relative;
+  margin-top: unset !important;
+  margin-left: 0.1em;
+  }
+  
+.content .marker-switch {
+  opacity: 0.7;
+  font-weight: 700;
+  transition: 0.3s;
+  margin-left: -1.5em;
+  margin-right: 5px;
+  padding: 0 8px 0 1.5em;
+  border-radius: 12px;
+}
+  
+.white-theme .content .marker-switch {
+  color: #504d47;
+  background: #f3f2ed;
+  opacity: 1;
+}
+  
+.white-theme .content .marker-switch:hover {
+  opacity: 0.7;
+}
+  
+.dark-theme .content .marker-switch {
+  color: var(--ls-primary-text-color);
+  background: #545454;
+}
+  
+.dark-theme .content .marker-switch:hover {
+  background: #6e6e6e;
+}
+  
+  
