@@ -51,7 +51,7 @@ div[data-refs-self*='"card"']
 //
 // Default `done`
 .form-checkbox
-  border-radius: 6px
+  border-radius: 4px
 
   &:checked
     background-color: var(--done-emphasis)
@@ -106,12 +106,17 @@ a.menu-link
 // table
 table
   .form-checkbox
-    background-color: transparent !important
-    border: 1px solid var(--ls-border-color) !important
+    background-color: var(--canvas-default)
+    border-width: 1px
+    border-style: solid
+    border-color: var(--ls-border-color)
 
     &:checked
-      background-color: var(--accent-emphasis) !important
-      border: 1px solid var(--accent-fg) !important
+      background-color: var(--accent-emphasis)
+      border-color: var(--accent-fg)
+
+    &:hover
+      transform: scale(1)
 
 // tag
 a.tag
