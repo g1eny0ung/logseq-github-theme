@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2022-05-26
+
+### Changed
+
+- Update `TODO` bg color [#9](https://github.com/g1eny0ung/logseq-github-theme/pull/9)
+
+### Fixed
+
+- Fix left/right placement tooltips
+- Fix the color of menu links
+- Fix the style of checkboxes in all pages
+
 ## [1.1.0] - 2022-04-02
 
 ### Added
