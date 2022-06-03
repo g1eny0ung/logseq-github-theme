@@ -281,7 +281,6 @@ html[data-theme=light] .CodeMirror .CodeMirror-gutters {
 }
 .white-theme .extensions__code-lang,
 html[data-theme=light] .extensions__code-lang {
-  top: -0.3em;
   padding-left: 0.5em;
   padding-right: 0.5em;
   background: var(--neutral-muted);
@@ -393,7 +392,6 @@ html[data-theme=dark] .CodeMirror .CodeMirror-gutters {
 }
 .dark-theme .extensions__code-lang,
 html[data-theme=dark] .extensions__code-lang {
-  top: -0.3em;
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
