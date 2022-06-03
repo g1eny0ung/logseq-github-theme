@@ -29,7 +29,7 @@ a.cloze {
   opacity: 0.5;
 }
 a.cloze:hover {
-  color: var(--open-emphasis);
+  color: var(--attention-emphasis);
   opacity: 1;
 }
 
@@ -246,7 +246,7 @@ html[data-theme=light] {
   --ls-scrollbar-background-color: none;
   --ls-scrollbar-thumb-hover-color: var(--neutral-emphasis);
   --ls-head-text-color: var(--ls-link-text-color);
-  --ls-cloze-text-color: var(--open-fg);
+  --ls-cloze-text-color: var(--attention-fg);
   --ls-icon-color: var(--fg-default);
   --ls-search-icon-color: var(--ls-link-text-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
