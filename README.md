@@ -20,7 +20,7 @@
 
 ## Manual Installation
 
-Here's how to install manually:
+Here's how to install manually (But in most cases you don't need to do this):
 
 ### Offline
 
