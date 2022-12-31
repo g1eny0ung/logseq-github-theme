@@ -68,25 +68,24 @@ span
 
 // menu-link
 a.menu-link
-  &:hover
-    background-color: var(--accent-emphasis)
-    color: var(--fg-on-emphasis) !important
+  a
+    transition: none
 
-    .block-parents *
-      color: var(--fg-on-emphasis)
-
-    a:hover
+    &:hover
       text-decoration: underline
 
-    span.page-reference
-      background: unset
+  &.chosen,
+  &:hover
+    background-color: var(--accent-emphasis) !important
+    color: var(--fg-on-emphasis) !important
 
-      &:hover
-        text-decoration: underline
+    p,
+    .block-parents *
+      background-color: unset !important
+      color: var(--fg-on-emphasis) !important
 
-    // cmd+shift+p
-    .chosen
-      background-color: unset
+    .type-icon
+      color: var(--ls-search-icon-color) !important
 
 // search
 .recent-search div[data-tooltipped] .ui__toggle > span[aria-checked="true"]

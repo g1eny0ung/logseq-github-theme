@@ -68,24 +68,24 @@ span.canceled div[data-tooltipped] {
   margin-right: 0.25em;
 }
 
-a.menu-link:hover {
-  background-color: var(--accent-emphasis);
+a.menu-link a {
+  transition: none;
+}
+a.menu-link a:hover {
+  text-decoration: underline;
+}
+a.menu-link.chosen, a.menu-link:hover {
+  background-color: var(--accent-emphasis) !important;
   color: var(--fg-on-emphasis) !important;
 }
+a.menu-link.chosen p,
+a.menu-link.chosen .block-parents *, a.menu-link:hover p,
 a.menu-link:hover .block-parents * {
-  color: var(--fg-on-emphasis);
+  background-color: unset !important;
+  color: var(--fg-on-emphasis) !important;
 }
-a.menu-link:hover a:hover {
-  text-decoration: underline;
-}
-a.menu-link:hover span.page-reference {
-  background: unset;
-}
-a.menu-link:hover span.page-reference:hover {
-  text-decoration: underline;
-}
-a.menu-link:hover .chosen {
-  background-color: unset;
+a.menu-link.chosen .type-icon, a.menu-link:hover .type-icon {
+  color: var(--ls-search-icon-color) !important;
 }
 
 .recent-search div[data-tooltipped] .ui__toggle > span[aria-checked=true] {
@@ -248,7 +248,8 @@ html[data-theme=light] {
   --ls-head-text-color: var(--ls-link-text-color);
   --ls-cloze-text-color: var(--attention-fg);
   --ls-icon-color: var(--fg-default);
-  --ls-search-icon-color: var(--ls-link-text-color);
+  --ls-search-icon-color: var(--ls-primary-text-color);
+  --ls-search-icon-hover-color: var(--ls-link-text-color);
   --ls-a-chosen-bg: var(--ls-secondary-background-color);
   --ls-right-sidebar-code-bg-color: var(--ls-secondary-background-color);
   --color-level-1: var(--ls-secondary-background-color);
