@@ -7,7 +7,7 @@ function build() {
   return gulp
     .src(entry)
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('.'))
+    .pipe(gulp.dest('./dist'))
 }
 
 exports.build = build
