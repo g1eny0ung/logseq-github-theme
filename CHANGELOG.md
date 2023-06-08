@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.0.0] - 2023-06-08
+
+This major version replace the old `.white-theme` selector with `.light-theme`. Some very old versions of Logseq may not support this change.
+
+### Changed
+
+- Replace `.white-theme` with `.light-theme`.
+
+### Fixed
+
+- Can not override `font-family`. [#13](https://github.com/g1eny0ung/logseq-github-theme/pull/13)
+
 ## [1.2.2] - 2022-12-31
 
 ### Fixed
