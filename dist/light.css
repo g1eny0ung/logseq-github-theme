@@ -174,7 +174,7 @@ a.tag:hover {
   box-shadow: var(--shadow-large);
 }
 
-.white-theme,
+.light-theme,
 html[data-theme=light] {
   --fg-default: #24292f;
   --fg-muted: #57606a;

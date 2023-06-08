@@ -174,7 +174,7 @@ a.tag:hover {
   box-shadow: var(--shadow-large);
 }
 
-.white-theme,
+.light-theme,
 html[data-theme=light] {
   --fg-default: #24292f;
   --fg-muted: #57606a;
@@ -259,28 +259,28 @@ html[data-theme=light] {
   --color-level-5: var(--scale-gray-4);
   --color-level-6: var(--scale-gray-5);
 }
-.white-theme .cp__all_pages .actions .l .actions-wrap button.ui__button,
+.light-theme .cp__all_pages .actions .l .actions-wrap button.ui__button,
 html[data-theme=light] .cp__all_pages .actions .l .actions-wrap button.ui__button {
   background-color: var(--neutral-emphasis);
   opacity: 1;
 }
-.white-theme .cp__all_pages .actions.has-selected .l .actions-wrap button.ui__button,
+.light-theme .cp__all_pages .actions.has-selected .l .actions-wrap button.ui__button,
 html[data-theme=light] .cp__all_pages .actions.has-selected .l .actions-wrap button.ui__button {
   background-color: var(--danger-emphasis);
 }
-.white-theme .block-children-left-border:hover,
+.light-theme .block-children-left-border:hover,
 html[data-theme=light] .block-children-left-border:hover {
   background-color: var(--neutral-emphasis);
 }
-.white-theme .CodeMirror,
+.light-theme .CodeMirror,
 html[data-theme=light] .CodeMirror {
   background: var(--neutral-muted);
 }
-.white-theme .CodeMirror .CodeMirror-gutters,
+.light-theme .CodeMirror .CodeMirror-gutters,
 html[data-theme=light] .CodeMirror .CodeMirror-gutters {
   background-color: transparent;
 }
-.white-theme .extensions__code-lang,
+.light-theme .extensions__code-lang,
 html[data-theme=light] .extensions__code-lang {
   padding-left: 0.5em;
   padding-right: 0.5em;
