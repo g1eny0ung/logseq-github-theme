@@ -29,6 +29,14 @@ a.cloze:hover {
   opacity: 1;
 }
 
+.CodeMirror {
+  box-shadow: none !important;
+}
+
+.extensions__code-lang {
+  background: transparent;
+}
+
 span.later .form-checkbox {
   background-color: var(--neutral-emphasis);
   border-color: var(--neutral-fg);
@@ -276,12 +284,6 @@ html[data-theme=light] .CodeMirror {
 html[data-theme=light] .CodeMirror .CodeMirror-gutters {
   background-color: transparent;
 }
-.light-theme .extensions__code-lang,
-html[data-theme=light] .extensions__code-lang {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  background: var(--neutral-muted);
-}
 
 .dark-theme,
 html[data-theme=dark] {
@@ -387,9 +389,4 @@ html[data-theme=dark] .CodeMirror {
 .dark-theme .CodeMirror .CodeMirror-gutters,
 html[data-theme=dark] .CodeMirror .CodeMirror-gutters {
   background-color: transparent;
-}
-.dark-theme .extensions__code-lang,
-html[data-theme=dark] .extensions__code-lang {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }

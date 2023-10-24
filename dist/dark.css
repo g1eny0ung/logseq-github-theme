@@ -29,6 +29,14 @@ a.cloze:hover {
   opacity: 1;
 }
 
+.CodeMirror {
+  box-shadow: none !important;
+}
+
+.extensions__code-lang {
+  background: transparent;
+}
+
 span.later .form-checkbox {
   background-color: var(--neutral-emphasis);
   border-color: var(--neutral-fg);
@@ -272,8 +280,4 @@ html[data-theme=dark] .CodeMirror {
 }
 html[data-theme=dark] .CodeMirror .CodeMirror-gutters {
   background-color: transparent;
-}
-html[data-theme=dark] .extensions__code-lang {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
