@@ -64,6 +64,15 @@ a.cloze
 .extensions__code-lang
   background: transparent
 
+// form
+.form-input
+  background-color: var(--canvas-default)
+  border-color: var(--ls-border-color) !important
+
+  &:focus
+    border-color: var(--accent-emphasis) !important
+    box-shadow: none
+
 // markers
 span
   +markers
@@ -88,6 +97,10 @@ a.menu-link
 
     .type-icon
       color: var(--ls-search-icon-color) !important
+
+// modal
+.ui__modal-panel
+  border-color: var(--border-muted) !important
 
 // search
 .recent-search div[data-tooltipped] .ui__toggle > span[aria-checked="true"]
@@ -168,3 +181,16 @@ a.tag
   border: 1px solid var(--border-default)
   border-radius: 6px
   box-shadow: var(--shadow-large)
+
+.cp__themes-installed .it
+  &.is-active, &:hover
+    background-color: var(--neutral-muted) !important
+
+a.page-ref
+  color: var(--accent-fg)
+
+.dropdown-wrapper
+  border-color: var(--border-muted)
+
+.menu-links-wrapper
+  background-color: var(--canvas-overlay) !important

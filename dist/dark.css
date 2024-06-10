@@ -37,6 +37,15 @@ a.cloze:hover {
   background: transparent;
 }
 
+.form-input {
+  background-color: var(--canvas-default);
+  border-color: var(--ls-border-color) !important;
+}
+.form-input:focus {
+  border-color: var(--accent-emphasis) !important;
+  box-shadow: none;
+}
+
 span.later .form-checkbox {
   background-color: var(--neutral-emphasis);
   border-color: var(--neutral-fg);
@@ -90,6 +99,10 @@ a.menu-link:hover .block-parents * {
 }
 a.menu-link.chosen .type-icon, a.menu-link:hover .type-icon {
   color: var(--ls-search-icon-color) !important;
+}
+
+.ui__modal-panel {
+  border-color: var(--border-muted) !important;
 }
 
 .recent-search div[data-tooltipped] .ui__toggle > span[aria-checked=true] {
@@ -176,6 +189,22 @@ a.tag:hover {
   border: 1px solid var(--border-default);
   border-radius: 6px;
   box-shadow: var(--shadow-large);
+}
+
+.cp__themes-installed .it.is-active, .cp__themes-installed .it:hover {
+  background-color: var(--neutral-muted) !important;
+}
+
+a.page-ref {
+  color: var(--accent-fg);
+}
+
+.dropdown-wrapper {
+  border-color: var(--border-muted);
+}
+
+.menu-links-wrapper {
+  background-color: var(--canvas-overlay) !important;
 }
 
 .dark-theme,
