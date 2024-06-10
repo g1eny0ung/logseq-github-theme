@@ -2,6 +2,10 @@
   border-radius: 6px;
 }
 
+.block-children-left-border:hover {
+  background-color: var(--neutral-emphasis);
+}
+
 a.button {
   color: var(--ls-icon-color);
 }
@@ -301,10 +305,6 @@ html[data-theme=light] .cp__all_pages .actions .l .actions-wrap button.ui__butto
 html[data-theme=light] .cp__all_pages .actions.has-selected .l .actions-wrap button.ui__button {
   background-color: var(--danger-emphasis);
 }
-.light-theme .block-children-left-border:hover,
-html[data-theme=light] .block-children-left-border:hover {
-  background-color: var(--neutral-emphasis);
-}
 .light-theme .CodeMirror,
 html[data-theme=light] .CodeMirror {
   background: var(--neutral-muted);
@@ -406,10 +406,6 @@ html[data-theme=dark] .cp__all_pages .actions .l .actions-wrap button.ui__button
 .dark-theme .cp__all_pages .actions.has-selected .l .actions-wrap button.ui__button,
 html[data-theme=dark] .cp__all_pages .actions.has-selected .l .actions-wrap button.ui__button {
   background-color: var(--danger-emphasis);
-}
-.dark-theme .block-children-left-border:hover,
-html[data-theme=dark] .block-children-left-border:hover {
-  background-color: var(--neutral-emphasis);
 }
 .dark-theme .CodeMirror,
 html[data-theme=dark] .CodeMirror {

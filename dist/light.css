@@ -2,6 +2,10 @@
   border-radius: 6px;
 }
 
+.block-children-left-border:hover {
+  background-color: var(--neutral-emphasis);
+}
+
 a.button {
   color: var(--ls-icon-color);
 }
@@ -299,10 +303,6 @@ html[data-theme=light] {
 }
 .cp__all_pages .actions.has-selected .l .actions-wrap button.ui__button {
   background-color: var(--danger-emphasis);
-}
-
-.block-children-left-border:hover {
-  background-color: var(--neutral-emphasis);
 }
 
 html[data-theme=light] .CodeMirror {
