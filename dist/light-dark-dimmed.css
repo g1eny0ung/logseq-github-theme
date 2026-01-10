@@ -78,11 +78,38 @@ span.doing .form-checkbox {
 span.doing .block-marker.DOING {
   color: var(--open-emphasis);
 }
-span.done div[data-tooltipped] {
-  margin-right: 0.25em;
+span.done {
+  display: inline-flex;
+  align-items: center;
 }
-span.canceled div[data-tooltipped] {
-  margin-right: 0.25em;
+span.in-progress .form-checkbox {
+  background-color: var(--open-emphasis);
+  border-color: var(--open-fg);
+}
+span.in-progress .block-marker.in-progress {
+  color: var(--open-emphasis);
+}
+span.wait .form-checkbox {
+  background-color: var(--attention-emphasis);
+  border-color: var(--attention-fg);
+}
+span.wait .block-marker.wait {
+  color: var(--attention-emphasis);
+}
+span.waiting .form-checkbox {
+  background-color: var(--attention-emphasis);
+  border-color: var(--attention-fg);
+}
+span.waiting .block-marker.waiting {
+  color: var(--attention-emphasis);
+}
+span.canceled {
+  display: inline-flex;
+  align-items: center;
+}
+span.cancelled {
+  display: inline-flex;
+  align-items: center;
 }
 
 a.menu-link a {
