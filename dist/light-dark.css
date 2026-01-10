@@ -134,12 +134,9 @@ table .form-checkbox:hover {
 
 a.tag {
   padding: 0.1em 0.5em;
-  background-color: var(--accent-fg);
-  color: #fff !important;
-  border-radius: 2em;
-}
-a.tag:hover {
   background-color: var(--accent-emphasis);
+  color: var(--fg-on-emphasis);
+  border-radius: 2em;
 }
 
 .tippy-popper[x-placement^=top] [x-arrow] {
