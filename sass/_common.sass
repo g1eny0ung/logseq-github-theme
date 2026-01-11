@@ -5,7 +5,7 @@ $markers: later, todo, now, doing, done
 $special-markers: in-progress, wait, waiting, canceled, cancelled
 
 =marker-text($marker, $color)
-  @if index($markers, $marker)
+  @if list.index($markers, $marker)
     .block-marker.#{string.to-upper-case($marker)}
       color: var(--#{$color}-emphasis)
   @else
@@ -26,14 +26,14 @@ $special-markers: in-progress, wait, waiting, canceled, cancelled
     align-items: center
 
 =markers
-  @each $marker in join($markers, $special-markers)
-    @if index([later, todo], $marker)
+  @each $marker in list.join($markers, $special-markers)
+    @if list.index([later, todo], $marker)
       +marker($marker, neutral)
-    @if index([now, doing, in-progress], $marker)
+    @if list.index([now, doing, in-progress], $marker)
       +marker($marker, open)
-    @if index([done, canceled, cancelled], $marker)
+    @if list.index([done, canceled, cancelled], $marker)
       +align-strikethrough-marker($marker)
-    @if index([wait, waiting], $marker)
+    @if list.index([wait, waiting], $marker)
       +marker($marker, attention)
 
 ::-webkit-scrollbar-thumb
