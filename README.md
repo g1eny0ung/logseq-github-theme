@@ -8,6 +8,8 @@
 <p align="center">😻 GitHub themes for <a href="https://logseq.com/">Logseq</a>.</p>
 <p align="center"><b>Now in Marketplace!</b> 🎉📢 You can install it via <b>Plugins -> Marketplace -> Themes</b>.</p>
 
+> This theme doesn't support Logseq's accent color. Because it will conflict with the colors in <https://primer.style/> (the design system for GitHub).
+
 ## Screenshots
 
 | Light                                 |
